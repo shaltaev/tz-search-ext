@@ -1,7 +1,7 @@
 {
-  "name": "search-plugin",
+  "name": "tz-search-ext",
   "version": "0.0.1",
-  "description": "Build an Extension!",
+  "description": "tz-search-ext!",
   "content_scripts": [
     {
       "matches": ["*://*/*"],
