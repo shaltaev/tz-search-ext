@@ -14,7 +14,7 @@ if (window && window.location.href.includes('google')) {
       const items = document.querySelectorAll('div.g')
       items.forEach((item) => {
         const title = item.querySelector<HTMLHeadingElement>('h3')
-        const description = item.querySelector<HTMLSpanElement>('h3')
+        const description = item.querySelector<HTMLSpanElement>('span.st')
 
         if (
           title?.innerText.toLowerCase().includes(SEARCH_TEXT.toLowerCase()) ||
