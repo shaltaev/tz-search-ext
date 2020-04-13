@@ -1,0 +1,14 @@
+{
+  "name": "search-plugin",
+  "version": "0.0.1",
+  "description": "Build an Extension!",
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["contentScript.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "permissions": ["activeTab", "*://*/*"],
+  "manifest_version": 2
+}
