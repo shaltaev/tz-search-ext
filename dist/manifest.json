@@ -1,10 +1,10 @@
 {
   "name": "tz-search-ext",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "tz-search-ext",
   "content_scripts": [
     {
-      "matches": ["*://*/*"],
+      "matches": ["*://*.google.com/*"],
       "js": ["contentScript.js"],
       "run_at": "document_end"
     }
@@ -18,6 +18,6 @@
     "48": "icon-48.png",
     "128": "icon-128.png"
   },
-  "permissions": ["storage", "activeTab", "*://*/*"],
+  "permissions": ["storage", "activeTab", "*://*.google.com/*"],
   "manifest_version": 2
 }
